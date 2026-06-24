@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+:root {
+  --background: #fbfaff;
+  --foreground: #1c1924;
+  --card-bg: #ffffff;
+  --card-border: #ebdffc;
+  --primary: #7c3aed;
+  --primary-hover: #6d28d9;
+  --accent: #f5f3ff;
+  --muted: #6b7280;
+  --shadow: 0 4px 20px -2px rgba(124, 58, 237, 0.05), 0 2px 10px -3px rgba(124, 58, 237, 0.05);
+}
+
+.dark {
+  --background: #090610;
+  --foreground: #f3f0f8;
+  --card-bg: #110d1e;
+  --card-border: #2c1f44;
+  --primary: #8b5cf6;
+  --primary-hover: #7c3aed;
+  --accent: #1e1334;
+  --muted: #9ca3af;
+  --shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.5);
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-family: var(--font-poppins), 'Poppins', sans-serif;
+  min-height: 100vh;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--card-border);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary);
+}
+
+/* Utilities */
+.card-premium {
+  background-color: var(--card-bg);
+  border: 1px solid var(--card-border);
+  box-shadow: var(--shadow);
+  border-radius: 1rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-premium:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px -4px rgba(124, 58, 237, 0.15);
+  border-color: var(--primary);
+}
