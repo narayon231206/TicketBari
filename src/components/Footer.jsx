@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import React from "react";
 import Image from "next/image";
@@ -71,19 +71,19 @@ export default function Footer() {
           <div>
             <h3 className="text-sm font-bold uppercase tracking-wider mb-4 text-violet-600 dark:text-violet-400">Contact Info</h3>
             <ul className="space-y-3 text-sm text-(--muted)">
-              <li className="flex items-center space-x-2">
-                <Mail className="h-4 w-4 text-violet-500" />
-                <a href="mailto:narayon231206@gmail.com" className="hover:text-violet-600 transition-colors">narayon231206@gmail.com</a>
+              <li className="flex items-start space-x-2">
+                <Mail className="h-4 w-4 text-violet-500 shrink-0 mt-0.5" />
+                <a href="mailto:narayon231206@gmail.com" className="hover:text-violet-600 transition-colors break-all">narayon231206@gmail.com</a>
               </li>
-              <li className="flex items-center space-x-2">
-                <Phone className="h-4 w-4 text-violet-500" />
+              <li className="flex items-start space-x-2">
+                <Phone className="h-4 w-4 text-violet-500 shrink-0 mt-0.5" />
                 <span>+880 1787946047</span>
               </li>
-              <li className="flex items-center space-x-2">
-                <svg className="h-4 w-4 text-violet-500 shrink-0" fill="currentColor" viewBox="0 0 24 24">
+              <li className="flex items-start space-x-2">
+                <svg className="h-4 w-4 text-violet-500 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c4.56-.93 8-4.96 8-9.8z"/>
                 </svg>
-                <a href="https://www.facebook.com/narayon.chandra.barman.268107" target="_blank" rel="noopener noreferrer" className="hover:text-violet-600 transition-colors">https://www.facebook.com/narayon.chandra.barman.268107</a>
+                <a href="https://www.facebook.com/narayon.chandra.barman.268107" target="_blank" rel="noopener noreferrer" className="hover:text-violet-600 transition-colors break-all">https://www.facebook.com/narayon.chandra.barman.268107</a>
               </li>
             </ul>
           </div>
