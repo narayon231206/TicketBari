@@ -30,7 +30,8 @@ export default function Tickets() {
           limit: "8",
         });
 
-        const res = await fetch(`http://localhost:5000/api/tickets?${queryParams.toString()}`);
+        const serverUrl = process.env.NEXT_PUBLIC_SERVER_URL || "http://localhost:5000";
+        const res = await fetch(`${serverUrl}/api/tickets?${queryParams.toString()}`);
         if (!res.ok) throw new Error("Failed to fetch tickets");
 
         const data = await res.json();

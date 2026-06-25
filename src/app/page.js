@@ -27,7 +27,8 @@ export default function Home() {
   useEffect(() => {
     const fetchAllTickets = async () => {
       try {
-        const res = await fetch("http://localhost:5000/api/tickets?limit=100");
+        const serverUrl = process.env.NEXT_PUBLIC_SERVER_URL || "http://localhost:5000";
+        const res = await fetch(`${serverUrl}/api/tickets?limit=100`);
         if (res.ok) {
           const data = await res.json();
           setAllTickets(data.tickets || []);
