@@ -83,7 +83,7 @@ export default function Footer() {
                 <svg className="h-4 w-4 text-violet-500 shrink-0" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c4.56-.93 8-4.96 8-9.8z"/>
                 </svg>
-                <a href="https://www.facebook.com/narayon.chandra.barman.268107" target="_blank" rel="noopener noreferrer" className="hover:text-violet-600 transition-colors">https://www.facebook.com/narayon.chandra.barman.268107</a>
+                <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-violet-600 transition-colors">https://www.facebook.com/narayon.chandra.barman.268107</a>
               </li>
             </ul>
           </div>
