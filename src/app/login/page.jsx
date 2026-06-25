@@ -57,9 +57,7 @@ export default function Login() {
 
     try {
       const result = await authClient.signIn.social({
-        provider: "google",
-        callbackURL: `${window.location.origin}/dashboard`,
-        errorCallbackURL: `${window.location.origin}/login`,
+        provider: "google"
       });
 
       if (result?.error) {
