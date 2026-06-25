@@ -35,7 +35,7 @@ export const AppProvider = ({ children }) => {
           const data = await response.json();
           localStorage.setItem("ticketbari_jwt", data.token);
           setJwt(data.token);
-          setUser(data.user);
+          setUser({ ...data.user, role: data.user.role || 'user' });
         } else {
           localStorage.removeItem("ticketbari_jwt");
           setJwt(null);

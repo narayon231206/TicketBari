@@ -49,6 +49,7 @@ export default function Register() {
     } catch (err) {
       setError("An unexpected error occurred. Please try again.");
       showToast({ message: "An unexpected error occurred. Please try again.", type: "error" });
+    } finally {
       setLoading(false);
     }
   };

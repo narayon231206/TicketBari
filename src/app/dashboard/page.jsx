@@ -227,7 +227,7 @@ function DashboardContent() {
         </div>
 
         <nav className="flex flex-row lg:flex-col overflow-x-auto lg:overflow-visible gap-1.5 pb-2 lg:pb-0">
-          {sidebarItems[user.role].map((item) => {
+          {(sidebarItems[user.role] || sidebarItems['user']).map((item) => {
             const Icon = item.icon;
             return (
               <button
