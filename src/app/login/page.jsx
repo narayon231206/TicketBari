@@ -18,7 +18,7 @@ export default function Login() {
 
   useEffect(() => {
     if (!authLoading && user) {
-      router.push("/dashboard");
+      router.push("/");
     }
   }, [user, authLoading, router]);
 
@@ -43,7 +43,7 @@ export default function Login() {
       // Sync and get custom JWT
       await syncAuth();
       showToast({ message: "Signed in successfully.", type: "success" });
-      router.push("/dashboard");
+      router.push("/");
     } catch (err) {
       setError("An unexpected error occurred. Please try again.");
       showToast({ message: "An unexpected error occurred. Please try again.", type: "error" });
@@ -59,7 +59,7 @@ export default function Login() {
     try {
       const result = await authClient.signIn.social({
         provider: "google",
-        callbackURL: `${window.location.origin}/dashboard`,
+        callbackURL: `${window.location.origin}/`,
         errorCallbackURL: `${window.location.origin}/login`,
       });
 

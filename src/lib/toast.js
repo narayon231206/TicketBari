@@ -1,6 +1,6 @@
 import { toast } from "react-toastify";
 
-export const showToast = ({ message, type = "info", duration = 4000 }) => {
+export const showToast = ({ message, type = "info", duration = 250 }) => {
   const options = { autoClose: duration, position: "top-right" };
 
   switch (type) {

@@ -90,7 +90,7 @@ export default function TicketDetails() {
       setModalOpen(false);
       reset();
       showToast({ message: "Booking request submitted successfully.", type: "success" });
-      router.push("/dashboard"); // Redirects to My Booked Tickets on User Dashboard
+      router.push("/"); // Redirects to Home Page
     } catch (err) {
       showToast({ message: err.message || "Failed to book ticket.", type: "error" });
     } finally {
